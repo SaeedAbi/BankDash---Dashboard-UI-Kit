@@ -35,12 +35,12 @@ export default {
         },
       ],
     },
-    colors: {
-      blue: "#1814F3",
-    },
     extend: {
       fontFamily: {
         inter: ["Inter"],
+      },
+      colors: {
+        blue: "#1814F3",
       },
     },
   },
