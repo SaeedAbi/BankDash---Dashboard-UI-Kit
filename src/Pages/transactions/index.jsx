@@ -29,14 +29,9 @@ const Transactions = () => {
   };
 
   React.useEffect(() => {
-    getTransactions()
-      .then((data) => {
-        setTransactions(data);
-      })
-      .catch((e) => {
-        console.error(e);
-        // alert("Something went wrong");
-      });
+    getTransactions().then((data) => {
+      setTransactions(data);
+    });
   }, []);
 
   //=============================================
