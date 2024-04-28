@@ -3,5 +3,8 @@ export const routes = {
   loans: "/loans",
   login: "/login",
   register: "/register",
-  transactions: "/transactions",
+  transactions: {
+    root: "/transactions",
+    details: "/transactions/:id",
+  },
 };

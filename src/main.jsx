@@ -11,6 +11,7 @@ import Loans from "./Pages/loans/index.jsx";
 import Error from "./Pages/Error/index.jsx";
 import Dashboard from "./Pages/dashboard/index.jsx";
 import { routes } from "./Routes/index.js";
+import TransactionsDetails from "./Pages/transactions/TransactionsDetails.jsx";
 
 const router = createBrowserRouter([
   {
@@ -22,8 +23,12 @@ const router = createBrowserRouter([
     element: <Loans />,
   },
   {
-    path: routes.transactions,
+    path: routes.transactions.root,
     element: <Transactions />,
+  },
+  {
+    path: routes.transactions.details,
+    element: <TransactionsDetails />,
   },
   {
     path: routes.login,
