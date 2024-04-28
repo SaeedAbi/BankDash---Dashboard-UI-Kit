@@ -1,10 +1,8 @@
 import React from "react";
-import { useNavigate } from "react-router";
 import { routes } from "../../Routes/index.js";
 import { Link } from "react-router-dom";
 
 const Table = ({ transactions = [], deleteHandler }) => {
-  const navigate = useNavigate();
   return (
     <div className={"m-3 p-3"}>
       <div className="relative overflow-x-auto shadow-md sm:rounded-lg">
@@ -45,7 +43,7 @@ const Table = ({ transactions = [], deleteHandler }) => {
               return (
                 <tr
                   key={transaction.id}
-                  className={`   border-b dark:border-gray-700 ${transaction.type === "withdraw" ? "bg-green-50" : "bg-red-50"}`}
+                  className={`border-b dark:border-gray-700 ${transaction.type === "withdraw" ? "bg-green-50" : "bg-red-50"}`}
                 >
                   <td
                     scope="row"

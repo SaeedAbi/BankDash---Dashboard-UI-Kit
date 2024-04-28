@@ -942,7 +942,7 @@ export const handlers = [
     else {
       return res(
         ctx.json({ message: `Not Found ${id} transaction` }),
-        ctx.status(450),
+        ctx.status(404),
       );
     }
   }),
