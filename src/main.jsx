@@ -1,5 +1,8 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
+import { RouterProvider } from "react-router";
+import { createBrowserRouter } from "react-router-dom";
+
 import "./Styles/global.css";
 import Transactions from "./Pages/transactions/index.jsx";
 import Login from "./Pages/login/index.jsx";
@@ -8,8 +11,6 @@ import Loans from "./Pages/loans/index.jsx";
 import Error from "./Pages/Error/index.jsx";
 import Dashboard from "./Pages/dashboard/index.jsx";
 import { routes } from "./Routes/index.js";
-import {  RouterProvider,  from "react-router";
-import { createBrowserRouter } from "react-router-dom";
 
 const router = createBrowserRouter([
   {
@@ -40,8 +41,6 @@ const router = createBrowserRouter([
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    <div>
-      <RouterProvider router={router} />
-    </div>
+    <RouterProvider router={router} />
   </React.StrictMode>,
 );
