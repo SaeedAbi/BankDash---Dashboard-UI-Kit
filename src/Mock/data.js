@@ -1,4 +1,4 @@
-export const transactions = [
+export let transactions = [
   {
     description: "Urinary-genital tract fistula, female",
     id: "21a91d6d-1de5-4ff9-9111-7810fdecb2d6",
